@@ -1,0 +1,16 @@
+fastapi
+uvicorn[standard]
+sqlalchemy[asyncio]
+asyncpg
+alembic
+python-jose[cryptography]
+bcrypt
+pydantic
+pydantic-settings
+httpx
+openai
+langchain
+langchain-qdrant
+qdrant-client
+redis
+python-multipart

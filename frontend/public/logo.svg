@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="120" height="120" viewBox="0 0 120 120" fill="none">
+  <!-- Background gradient -->
+  <defs>
+    <linearGradient id="bgGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#6366f1"/>
+      <stop offset="100%" stop-color="#7c3aed"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Rounded square background -->
+  <rect width="120" height="120" rx="28" fill="url(#bgGrad)"/>
+
+  <!-- Stylized "S" letter -->
+  <path
+    d="M38 78C38 68.5 45 64 54 60C63 56 70 52.5 70 44C70 36 64 32 56 32C50 32 44 34.5 40 40"
+    stroke="white" stroke-width="5" stroke-linecap="round" fill="none"
+  />
+  <path
+    d="M82 42C82 51.5 75 56 66 60C57 64 50 67.5 50 76C50 84 56 88 64 88C70 88 76 85.5 80 80"
+    stroke="white" stroke-width="5" stroke-linecap="round" fill="none"
+  />
+
+  <!-- Sparkle dots -->
+  <circle cx="86" cy="30" r="3" fill="white" opacity="0.8"/>
+  <circle cx="34" cy="90" r="2" fill="white" opacity="0.6"/>
+  <circle cx="90" cy="88" r="2" fill="white" opacity="0.4"/>
+</svg>
