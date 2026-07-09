@@ -31,14 +31,29 @@
 super-ai-ru/
 ├── README.md                              # Этот файл
 ├── LICENSE                                # MIT
-└── docs/
-    ├── abacus_analysis_ru.md               # 📗 Полное исследование (сводный отчёт)
-    ├── abacus_analysis_ru.pdf              # 🖨️ Версия для печати
-    ├── abacus_analysis_ru.html             # Версия для браузера
-    ├── competitive_analysis.md             # 🏆 Конкурентный анализ (22 KB)
-    ├── techstack_comparison.md             # 💻 Сравнение техстека (10 KB)
-    ├── research_russian_market.md          # 🇷🇺 Глубокий обзор рынка РФ (411 строк)
-    └── research_russian_platforms.md       # 🏗️ Российские платформы-аналоги (234 строки)
+│
+├── docs/                                  # 📘 Исследования и аналитика
+│   ├── abacus_analysis_ru.md               # 📗 Сводный отчёт (24 KB)
+│   ├── abacus_analysis_ru.pdf              # 🖨️ Версия для печати (2 MB)
+│   ├── abacus_analysis_ru.html             # Версия для браузера
+│   ├── competitive_analysis.md             # 🏆 Конкурентный анализ (22 KB)
+│   ├── techstack_comparison.md             # 💻 Сравнение техстека (10 KB)
+│   ├── research_russian_market.md          # 🇷🇺 Глубокий обзор рынка РФ (411 строк)
+│   └── research_russian_platforms.md       # 🏗️ Российские платформы-аналоги (234 строки)
+│
+├── docs/design/                           # 🎯 Product Design
+│   ├── VISION.md          (в работе)     # Product Vision & Roadmap
+│   └── PRD.md             (в работе)     # Product Requirements Document
+│
+├── docs/tech/                             # ⚙️ Technical Documentation
+│   ├── ARCHITECTURE.md    (в работе)     # Архитектура системы
+│   ├── api.md                             # API Спецификация (REST + WS)
+│   └── datamodel.md                       # Модель данных (PG + CH + Qdrant + Redis)
+│
+└── docs/plan/                             # 📋 Project Management
+    ├── infrastructure.md                   # Инфраструктурный план
+    ├── budget_timeline_risks.md            # Бюджет, сроки, риски
+    └── team.md                             # Команда и найм
 ```
 
 ---

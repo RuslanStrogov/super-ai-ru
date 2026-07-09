@@ -190,7 +190,39 @@
 
 ---
 
-## 💻 6. СРАВНЕНИЕ ТЕХНОЛОГИЧЕСКОГО СТЕКА
+## 📂 ПОЛНЫЙ ПАКЕТ ДОКУМЕНТОВ ПРОЕКТА
+
+В репозитории подготовлены все документы для старта разработки:
+
+### 📘 docs/ — Исследования и аналитика
+| Файл | О чём |
+|------|-------|
+| `competitive_analysis.md` | Детальный разбор 15+ мировых конкурентов (DataRobot, H2O, Vertex AI, SageMaker, MLflow и др.) |
+| `techstack_comparison.md` | Сравнение техстека Abacus.ai vs конкуренты — таблица по 6 категориям |
+| `research_russian_market.md` | Глубокое исследование рынка РФ: 10+ российских платформ, цифры TAdviser, санкции |
+| `research_russian_platforms.md` | Обзор российских аналогов: Yandex DataSphere, ML Space, Loginom, KNIME и др. |
+
+### 🎯 docs/design/ — Product Design
+| Файл | О чём |
+|------|-------|
+| `VISION.md` | Product Vision, Mission, Roadmap по фазам (0-5), KPI, риски |
+| `PRD.md` | Product Requirements: MVP scope, user stories, acceptance criteria |
+
+### ⚙️ docs/tech/ — Technical Documentation
+| Файл | О чём |
+|------|-------|
+| `ARCHITECTURE.md` | Архитектура системы: C4-диаграммы, компоненты, data flow, security |
+| `api.md` | Полная API-спецификация: REST + WebSocket, все эндпоинты, rate limits |
+| `datamodel.md` | Модель данных: PostgreSQL, ClickHouse, Qdrant, Redis, ER-диаграмма |
+
+### 📋 docs/plan/ — Project Management
+| Файл | О чём |
+|------|-------|
+| `infrastructure.md` | Инфраструктура: Yandex Cloud, сеть, GPU-планирование, CI/CD, мониторинг |
+| `budget_timeline_risks.md` | Бюджет (106-150 млн), таймлайн (24 мес), монетизация, реестр рисков |
+| `team.md` | Команда: оргструктура, роли, ЗП, план найма по месяцам |
+
+> 🔑 **MVP запуск**: месяц 4. Полный цикл: 24 месяца. Точка безубыточности: месяц 14-16.
 
 ### Сводная таблица:
 
