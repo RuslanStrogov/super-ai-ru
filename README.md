@@ -32,7 +32,9 @@ super-ai-ru/
 ├── README.md                          # Этот файл
 ├── docs/
 │   ├── abacus_analysis_ru.md           # Полное исследование (Markdown)
-│   └── abacus_analysis_ru.pdf          # Версия для печати (PDF)
+│   ├── abacus_analysis_ru.pdf          # 🖨️ Версия для печати (PDF)
+│   ├── abacus_analysis_ru.html         # Версия для браузера
+│   └── research_russian_market.md      # Детальное исследование рынка РФ
 └── ...
 ```
 

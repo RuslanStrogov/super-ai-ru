@@ -1,103 +1,22 @@
-<!DOCTYPE html>
-<html lang="ru">
-<head>
-<meta charset="utf-8">
-<title>Super AI RU — Аналитика рынка AI/ML-платформ в РФ</title>
-<style>
-@page {
-    size: A4;
-    margin: 1.5cm 1.8cm;
-    @bottom-center {
-        content: "Страница " counter(page) " из " counter(pages);
-        font-size: 9pt;
-        color: #666;
-        font-family: 'Segoe UI', Arial, sans-serif;
-    }
-}
-body {
-    font-family: 'Segoe UI', Arial, sans-serif;
-    font-size: 10pt;
-    line-height: 1.45;
-    color: #1a1a1a;
-}
-h1 {
-    font-size: 16pt;
-    color: #1e3a5f;
-    margin-top: 1cm;
-    padding-bottom: 3px;
-    border-bottom: 2px solid #2563eb;
-    page-break-after: avoid;
-}
-h1:first-of-type {
-    text-align: center;
-    font-size: 20pt;
-    padding-top: 2cm;
-    padding-bottom: 8px;
-    border-bottom: 3px solid #2563eb;
-}
+<html><meta charset="utf-8"><style>
+@page { size: A4; margin: 1.5cm 1.8cm; @bottom-center { content: "Страница " counter(page) " из " counter(pages); font-size: 9pt; color: #666; font-family: Segoe UI, Arial, sans-serif; } }
+body { font-family: Segoe UI, Arial, sans-serif; font-size: 10pt; line-height: 1.45; color: #1a1a1a; }
+h1 { font-size: 16pt; color: #1e3a5f; margin-top: 1cm; border-bottom: 2px solid #2563eb; page-break-after: avoid; }
+h1:first-of-type { text-align: center; font-size: 20pt; padding-top: 2cm; border-bottom: 3px solid #2563eb; }
 h1:nth-of-type(2) { page-break-before: always; }
-h2 {
-    font-size: 13pt;
-    color: #2563eb;
-    margin-top: 0.6cm;
-    page-break-after: avoid;
-}
-h3 {
-    font-size: 11pt;
-    color: #374151;
-    margin-top: 0.4cm;
-    page-break-after: avoid;
-}
+h2 { font-size: 13pt; color: #2563eb; margin-top: 0.6cm; page-break-after: avoid; }
+h3 { font-size: 11pt; color: #374151; margin-top: 0.4cm; page-break-after: avoid; }
 p { margin: 0.2cm 0; text-align: justify; }
-table {
-    width: 100%;
-    border-collapse: collapse;
-    margin: 0.3cm 0;
-    font-size: 8.5pt;
-    page-break-inside: auto;
-}
-th {
-    background: #2563eb;
-    color: white;
-    padding: 4px 6px;
-    text-align: left;
-    font-weight: 600;
-}
-td {
-    padding: 3px 6px;
-    border: 1px solid #b0b0b0;
-}
+table { width: 100%; border-collapse: collapse; margin: 0.3cm 0; font-size: 8.5pt; }
+th { background: #2563eb; color: white; padding: 4px 6px; text-align: left; }
+td { padding: 3px 6px; border: 1px solid #b0b0b0; }
 tr:nth-child(even) { background: #f5f5f5; }
 ul, ol { margin: 0.15cm 0; padding-left: 0.6cm; }
-li { margin: 0.08cm 0; }
-code {
-    font-family: 'Consolas', 'Courier New', monospace;
-    font-size: 8pt;
-    background: #f0f0f0;
-    padding: 1px 3px;
-    border-radius: 2px;
-}
-pre {
-    background: #f0f0f0;
-    padding: 0.2cm;
-    border-left: 3px solid #2563eb;
-    font-size: 7.5pt;
-    white-space: pre-wrap;
-    page-break-inside: avoid;
-}
-blockquote {
-    border-left: 3px solid #2563eb;
-    margin: 0.3cm 0;
-    padding: 0.15cm 0.4cm;
-    background: #f0f7ff;
-    font-style: italic;
-}
+code { font-family: Consolas, Courier New, monospace; font-size: 8pt; background: #f0f0f0; padding: 1px 3px; }
+pre { background: #f0f0f0; padding: 0.2cm; border-left: 3px solid #2563eb; font-size: 7.5pt; white-space: pre-wrap; }
+blockquote { border-left: 3px solid #2563eb; margin: 0.3cm 0; padding: 0.15cm 0.4cm; background: #f0f7ff; font-style: italic; }
 hr { border: none; border-top: 1px solid #ccc; margin: 0.5cm 0; }
-input[type="checkbox"] { transform: scale(0.8); }
-</style>
-</head>
-<body>
-<h1>🧠 Аналитика Abacus.ai и рынка AI/ML-платформ в России</h1>
+</style><body><h1>🧠 Аналитика Abacus.ai и рынка AI/ML-платформ в России</h1>
 <blockquote>
 <p>Дата: Июль 2026
 Цель: полная аналитика перед началом разработки аналога в РФ</p>
@@ -417,17 +336,26 @@ input[type="checkbox"] { transform: scale(0.8); }
 </table>
 <h3>GPU в РФ — что доступно:</h3>
 <ul>
-<li><strong>Покупка</strong>: NVIDIA H100/A100 — ❌ официально не поставляются (санкции), параллельный импорт с наценкой 100-200%</li>
-<li><strong>Старые GPU</strong>: RTX 4090/3090/3080 — ✅ доступны через параллельный импорт</li>
-<li><strong>Аренда GPU в РФ</strong>: ✅ DataLine, Selectel, Yandex Cloud, SberCloud (ML Space) — есть GPU-инстансы</li>
-<li><strong>Аренда GPU за рубежом</strong>: ✅ RunPod, Vast.ai, Lambda Labs — доступны, но оплата через крипту/друзей</li>
+<li><strong>Покупка H100/A100</strong>: ❌ под прямыми санкциями США (BIS)</li>
+<li><strong>Параллельный импорт</strong>: ✅ через Казахстан/ОАЭ/Турцию, наценка <strong>30-100%</strong></li>
+<li><strong>Старые GPU (RTX 4090/3090/4080)</strong>: ✅ доступны, но цены выросли</li>
+<li><strong>Всего GPU в ЦОД РФ</strong>: ~<strong>10 000 шт.</strong> для AI (ничтожно мало vs США ~500 000+)</li>
+<li><strong>Аренда GPU в РФ</strong>:</li>
+<li>✅ <strong>Yandex Cloud</strong>: T4, V100, A100 (почасовка)</li>
+<li>✅ <strong>SberCloud ML Space</strong>: A100, H100 (только Enterprise)</li>
+<li>✅ <strong>Selectel</strong>: A100, V100</li>
+<li>✅ <strong>DataLine</strong>: RTX 4090, A100</li>
+<li><strong>Аренда GPU за рубежом</strong>: ✅ RunPod, Vast.ai, Lambda Labs — доступны через крипту/друзей</li>
 </ul>
 <hr />
 <h2>📊 4. РЫНОК AI В РФ — СПРОС И ТРЕНДЫ</h2>
-<p><strong>Размер рынка</strong> (оценка 2024-2025):
-- Рынок AI в РФ: <strong>~70-100 млрд ₽</strong> (2024), прогноз <strong>200+ млрд ₽ к 2027</strong>
-- Рост: <strong>25-35% годовых</strong>
-- Доля ML-платформ и MLOps: ~15-20 млрд ₽
+<p><strong>Размер рынка</strong> (данные TAdviser, 2024-2026):
+- <strong>Общий рынок AI в РФ</strong>: <strong>1.15 трлн ₽</strong> (2024, рост +28.4%)
+- <strong>Расходы на AI/ML</strong>: <strong>90.3 млрд ₽</strong> (2024)
+- <strong>Рынок ПО для AI</strong>: <strong>25+ млрд ₽</strong> (рост +30.5%/год, прогноз 95 млрд ₽ к 2030)
+- <strong>Рост GenAI в РФ</strong>: <strong>+53.5%</strong> (2025) — главный драйвер
+- <strong>Реальное использование AI компаниями</strong>: только <strong>5.8%</strong>
+- <strong>Провал AI-проектов</strong>: <strong>80-90%</strong>
 - Data Science/AI вакансий в РФ: &gt;30 000 активных</p>
 <p><strong>Отрасли-лидеры внедрения AI:</strong>
 | Отрасль | Доля | Что внедряют |
@@ -445,12 +373,13 @@ input[type="checkbox"] { transform: scale(0.8); }
 - ✅ <strong>AI-стратегия РФ до 2030</strong> — принята, выделены бюджеты
 - ⚠️ <strong>Готовность платить</strong>: Enterprise средний чек 3-15 млн ₽/год, SMB 50-300 тыс ₽/мес</p>
 <p><strong>Проблемы внедрения AI в РФ:</strong>
-1. ❗ Дефицит квалифицированных ML-инженеров (особенно Senior+)
-2. ❗ Дорогое GPU-оборудование и его дефицит (санкции)
-3. ❗ Сложность интеграции с legacy-системами (1С, SAP)
-4. ❗ Отсутствие единых стандартов MLOps
-5. ❗ Высокий порог входа — нет "коробочных" AI-решений для SMB
-6. ❗ Законодательство о ПДн (ФЗ-152) — нельзя использовать западные облачные AI</p>
+1. ❗ <strong>Дефицит кадров</strong> (67% компаний) — особенно Senior ML-инженеры
+2. ❗ <strong>Качество данных</strong> (52%) — данные разрознены, нет Data Governance
+3. ❗ <strong>Сложность интеграции</strong> (45%) — с legacy-системами (1С, SAP)
+4. ❗ <strong>Стоимость GPU и инфраструктуры</strong> (41%) — санкции, дорогой параллельный импорт
+5. ❗ <strong>Непонятный ROI</strong> (38%) — бухгалтерия не понимает, зачем платить за AI
+6. ❗ <strong>Отсутствие единых стандартов MLOps</strong> — каждый внедряет «с велосипедом»
+7. ❗ <strong>Законодательство о ПДн (ФЗ-152)</strong> — нельзя использовать западные облачные AI</p>
 <hr />
 <h2>🔍 5. СВОБОДНЫЕ НИШИ В РФ</h2>
 <h3>Что есть у Abacus.ai, чего НЕТ на рынке РФ:</h3>
@@ -714,47 +643,43 @@ input[type="checkbox"] { transform: scale(0.8); }
 <hr />
 <h2>⚙️ 8. ТЕХНИЧЕСКИЕ ТРЕБОВАНИЯ (ТЕХСТЕК)</h2>
 <h3>Backend:</h3>
-<div class="codehilite"><pre><span></span><code><span class="o">-</span><span class="w"> </span><span class="nl">Языки</span><span class="p">:</span><span class="w"> </span><span class="n">Python</span><span class="w"> </span><span class="mf">3.12</span><span class="o">+</span><span class="w"> </span><span class="p">(</span><span class="n">основной</span><span class="p">),</span><span class="w"> </span><span class="k">Go</span><span class="w"> </span><span class="p">(</span><span class="n">высоконагруженные</span><span class="w"> </span><span class="n">микросервисы</span><span class="p">)</span>
-<span class="o">-</span><span class="w"> </span><span class="nl">Фреймворки</span><span class="p">:</span><span class="w"> </span><span class="n">FastAPI</span><span class="p">,</span><span class="w"> </span><span class="n">Celery</span><span class="p">,</span><span class="w"> </span><span class="n">Redis</span>
-<span class="o">-</span><span class="w"> </span><span class="nl">ASGI</span><span class="p">:</span><span class="w"> </span><span class="n">Uvicorn</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">Gunicorn</span>
-<span class="o">-</span><span class="w"> </span><span class="n">LLM</span><span class="w"> </span><span class="nl">Gateway</span><span class="p">:</span><span class="w"> </span><span class="n">LiteLLM</span><span class="w"> </span><span class="p">(</span><span class="k">open</span><span class="w"> </span><span class="n">source</span><span class="w"> </span><span class="err">—</span><span class="w"> </span><span class="n">единый</span><span class="w"> </span><span class="n">API</span><span class="w"> </span><span class="n">ко</span><span class="w"> </span><span class="n">всем</span><span class="w"> </span><span class="n">LLM</span><span class="p">)</span>
-<span class="o">-</span><span class="w"> </span><span class="nl">RAG</span><span class="p">:</span><span class="w"> </span><span class="n">LangChain</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">LlamaIndex</span>
-<span class="o">-</span><span class="w"> </span><span class="n">Vector</span><span class="w"> </span><span class="nl">DB</span><span class="p">:</span><span class="w"> </span><span class="n">Qdrant</span><span class="w"> </span><span class="p">(</span><span class="n">self</span><span class="o">-</span><span class="n">hosted</span><span class="p">)</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">PGVector</span><span class="w"> </span><span class="p">(</span><span class="n">PostgreSQL</span><span class="p">)</span>
-<span class="o">-</span><span class="w"> </span><span class="n">Agent</span><span class="w"> </span><span class="nl">Framework</span><span class="p">:</span><span class="w"> </span><span class="n">CrewAI</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">AutoGen</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">самописный</span><span class="w"> </span><span class="n">оркестратор</span>
-<span class="o">-</span><span class="w"> </span><span class="nl">Очереди</span><span class="p">:</span><span class="w"> </span><span class="n">RabbitMQ</span><span class="w"> </span><span class="o">/</span><span class="w"> </span><span class="n">Kafka</span><span class="w"> </span><span class="p">(</span><span class="n">для</span><span class="w"> </span><span class="n">логов</span><span class="w"> </span><span class="n">агентов</span><span class="p">)</span>
-<span class="o">-</span><span class="w"> </span><span class="nl">Базы</span><span class="p">:</span><span class="w"> </span><span class="n">PostgreSQL</span><span class="w"> </span><span class="p">(</span><span class="n">основная</span><span class="p">),</span><span class="w"> </span><span class="n">Redis</span><span class="w"> </span><span class="p">(</span><span class="n">кэш</span><span class="o">/</span><span class="n">сессии</span><span class="p">),</span><span class="w"> </span><span class="n">ClickHouse</span><span class="w"> </span><span class="p">(</span><span class="n">логи</span><span class="o">/</span><span class="n">мониторинг</span><span class="p">)</span>
-<span class="o">-</span><span class="w"> </span><span class="nl">ML</span><span class="p">:</span><span class="w"> </span><span class="n">PyTorch</span><span class="p">,</span><span class="w"> </span><span class="n">Transformers</span><span class="p">,</span><span class="w"> </span><span class="n">vLLM</span><span class="p">,</span><span class="w"> </span><span class="n">DeepSpeed</span><span class="p">,</span><span class="w"> </span><span class="n">MLflow</span><span class="p">,</span><span class="w"> </span><span class="n">Evidently</span><span class="w"> </span><span class="n">AI</span>
-<span class="o">-</span><span class="w"> </span><span class="n">Мета</span><span class="o">-</span><span class="nl">обучение</span><span class="p">:</span><span class="w"> </span><span class="n">AutoGluon</span><span class="p">,</span><span class="w"> </span><span class="n">Optuna</span><span class="p">,</span><span class="w"> </span><span class="n">FLAML</span>
-<span class="o">-</span><span class="w"> </span><span class="n">Fine</span><span class="o">-</span><span class="nl">tuning</span><span class="p">:</span><span class="w"> </span><span class="n">LoRA</span><span class="o">/</span><span class="n">QLoRA</span><span class="w"> </span><span class="p">(</span><span class="n">PEFT</span><span class="w"> </span><span class="n">библиотека</span><span class="p">)</span>
-</code></pre></div>
-
+<pre><code>- Языки: Python 3.12+ (основной), Go (высоконагруженные микросервисы)
+- Фреймворки: FastAPI, Celery, Redis
+- ASGI: Uvicorn + Gunicorn
+- LLM Gateway: LiteLLM (open source — единый API ко всем LLM)
+- RAG: LangChain + LlamaIndex
+- Vector DB: Qdrant (self-hosted) + PGVector (PostgreSQL)
+- Agent Framework: CrewAI + AutoGen + самописный оркестратор
+- Очереди: RabbitMQ / Kafka (для логов агентов)
+- Базы: PostgreSQL (основная), Redis (кэш/сессии), ClickHouse (логи/мониторинг)
+- ML: PyTorch, Transformers, vLLM, DeepSpeed, MLflow, Evidently AI
+- Мета-обучение: AutoGluon, Optuna, FLAML
+- Fine-tuning: LoRA/QLoRA (PEFT библиотека)
+</code></pre>
 <h3>Frontend:</h3>
-<div class="codehilite"><pre><span></span><code><span class="o">-</span><span class="w"> </span><span class="nv">Framework</span>:<span class="w"> </span><span class="k">Next</span>.<span class="nv">js</span><span class="w"> </span><span class="mi">14</span><span class="o">+</span><span class="w"> </span><span class="ss">(</span><span class="nv">React</span><span class="ss">)</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="nv">TypeScript</span>
-<span class="o">-</span><span class="w"> </span><span class="nv">UI</span><span class="w"> </span><span class="nv">Kit</span>:<span class="w"> </span><span class="nv">shadcn</span><span class="o">/</span><span class="nv">ui</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="nv">Tailwind</span><span class="w"> </span><span class="nv">CSS</span>
-<span class="o">-</span><span class="w"> </span><span class="nv">State</span>:<span class="w"> </span><span class="nv">Zustand</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="nv">React</span><span class="w"> </span><span class="nv">Query</span>
-<span class="o">-</span><span class="w"> </span><span class="nv">Streaming</span>:<span class="w"> </span><span class="nv">Server</span><span class="o">-</span><span class="nv">Sent</span><span class="w"> </span><span class="nv">Events</span><span class="w"> </span><span class="ss">(</span><span class="nv">SSE</span><span class="ss">)</span><span class="w"> </span>для<span class="w"> </span><span class="nv">streaming</span><span class="w"> </span><span class="nv">LLM</span><span class="w"> </span>ответов
-<span class="o">-</span><span class="w"> </span><span class="nv">Desktop</span>:<span class="w"> </span><span class="nv">Tauri</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="nv">React</span><span class="w"> </span><span class="ss">(</span><span class="nv">Rust</span><span class="o">-</span><span class="nv">based</span>,<span class="w"> </span>легче<span class="w"> </span><span class="nv">Electron</span><span class="ss">)</span>
-</code></pre></div>
-
+<pre><code>- Framework: Next.js 14+ (React) + TypeScript
+- UI Kit: shadcn/ui + Tailwind CSS
+- State: Zustand + React Query
+- Streaming: Server-Sent Events (SSE) для streaming LLM ответов
+- Desktop: Tauri + React (Rust-based, легче Electron)
+</code></pre>
 <h3>Infra:</h3>
-<div class="codehilite"><pre><span></span><code>- Cloud: Yandex Cloud (основной), SberCloud ML Space (резерв)
+<pre><code>- Cloud: Yandex Cloud (основной), SberCloud ML Space (резерв)
 - Container: Docker + Kubernetes (Yandex Managed K8s)
 - GPU: Аренда (Yandex DataSphere / Selectel) + собственные RTX 4090 (CPU)
 - CI/CD: GitLab CI
 - Logging: ELK / OpenSearch
 - Monitoring: Prometheus + Grafana
 - Object Storage: Yandex Object Storage (S3-compatible)
-</code></pre></div>
-
+</code></pre>
 <h3>Безопасность (для Enterprise/Гос):</h3>
-<div class="codehilite"><pre><span></span><code>- Auth: Keycloak (SSO, OAuth2, LDAP, SAML)
+<pre><code>- Auth: Keycloak (SSO, OAuth2, LDAP, SAML)
 - RBAC: Кастомная + Keycloak
 - Audit: ClickHouse + Kafka (все действия логируются)
 - Secrets: HashiCorp Vault / Yandex Lockbox
 - Data: Шифрование at rest + in transit, ФЗ-152
 - Network: Private cloud / VPC
-</code></pre></div>
-
+</code></pre>
 <hr />
 <h2>💰 9. ПРИМЕРНАЯ СМЕТА И МОНЕТИЗАЦИЯ</h2>
 <h3>Стоимость разработки (оценка):</h3>
@@ -922,6 +847,4 @@ input[type="checkbox"] { transform: scale(0.8); }
 <li>✅ Full Stack App Generation из промпта</li>
 <li>✅ Enterprise MLOps с AutoML и Fine-tuning</li>
 <li>✅ Бесшовная интеграция с 1С и российскими сервисами</li>
-</ol>
-</body>
-</html>
+</ol></body></html>
