@@ -2,6 +2,12 @@
 
 > Дата: Июль 2026
 > Цель: полная аналитика перед началом разработки аналога в РФ
+> 
+> 📚 **Дополнительные отчёты в папке `docs/`:**
+> - [`competitive_analysis.md`](competitive_analysis.md) — детальный конкурентный анализ (15 платформ, 4 группы)
+> - [`techstack_comparison.md`](techstack_comparison.md) — сравнение технологических стеков
+> - [`research_russian_market.md`](research_russian_market.md) — углублённое исследование рынка РФ
+> - [`research_russian_platforms.md`](research_russian_platforms.md) — обзор российских платформ-аналогов
 
 ---
 
