@@ -42,13 +42,13 @@ super-ai-ru/
 │   └── research_russian_platforms.md       # 🏗️ Российские платформы-аналоги (234 строки)
 │
 ├── docs/design/                           # 🎯 Product Design
-│   ├── VISION.md          (в работе)     # Product Vision & Roadmap
-│   └── PRD.md             (в работе)     # Product Requirements Document
+│   ├── VISION.md                          # ✅ Product Vision & Roadmap
+│   └── PRD.md                             # ✅ Product Requirements Document
 │
 ├── docs/tech/                             # ⚙️ Technical Documentation
-│   ├── ARCHITECTURE.md    (в работе)     # Архитектура системы
-│   ├── api.md                             # API Спецификация (REST + WS)
-│   └── datamodel.md                       # Модель данных (PG + CH + Qdrant + Redis)
+│   ├── ARCHITECTURE.md                    # ✅ Архитектура системы (1285 строк)
+│   ├── api.md                             # ✅ API Спецификация (REST + WS)
+│   └── datamodel.md                       # ✅ Модель данных (PG + CH + Qdrant + Redis)
 │
 └── docs/plan/                             # 📋 Project Management
     ├── infrastructure.md                   # Инфраструктурный план
