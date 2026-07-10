@@ -1,12 +1,18 @@
 /**
  * Страница регистрации — /register.
- * SSR для SEO. Использует RegisterForm компонент.
+ * CSR — содержит интерактивную форму.
  */
 
+'use client'
+
+import { useRouter } from 'next/navigation'
 import Link from 'next/link'
 import { RegisterForm } from '@/components/auth/RegisterForm'
 
+export const dynamic = 'force-dynamic'
+
 export default function RegisterPage() {
+  const router = useRouter()
   return (
     <div className="min-h-screen flex items-center justify-center p-4">
       {/* Градиентный фон */}
@@ -28,7 +34,7 @@ export default function RegisterPage() {
 
         {/* Форма */}
         <div className="bg-surface-800/60 backdrop-blur-xl border border-surface-700/50 rounded-2xl p-8">
-          <RegisterForm onSuccess={() => window.location.href = '/chat'} />
+          <RegisterForm onSuccess={() => router.push('/chat')} />
 
           {/* Ссылка на вход */}
           <p className="text-center text-sm text-surface-400 mt-6">

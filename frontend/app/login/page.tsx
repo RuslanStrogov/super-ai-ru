@@ -1,12 +1,18 @@
 /**
  * Страница входа — /login.
- * SSR для SEO. Использует LoginForm компонент.
+ * CSR — содержит интерактивную форму.
  */
 
+'use client'
+
+import { useRouter } from 'next/navigation'
 import Link from 'next/link'
 import { LoginForm } from '@/components/auth/LoginForm'
 
+export const dynamic = 'force-dynamic'
+
 export default function LoginPage() {
+  const router = useRouter()
   return (
     <div className="min-h-screen flex items-center justify-center p-4">
       {/* Градиентный фон */}
@@ -28,7 +34,7 @@ export default function LoginPage() {
 
         {/* Форма */}
         <div className="bg-surface-800/60 backdrop-blur-xl border border-surface-700/50 rounded-2xl p-8">
-          <LoginForm onSuccess={() => window.location.href = '/chat'} />
+          <LoginForm onSuccess={() => router.push('/chat')} />
 
           {/* Ссылка на регистрацию */}
           <p className="text-center text-sm text-surface-400 mt-6">
