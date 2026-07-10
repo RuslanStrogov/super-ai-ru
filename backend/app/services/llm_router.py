@@ -244,7 +244,9 @@ async def stream_chat(
         async for token in _stream_gigachat(messages, temperature, max_tokens):
             yield token
     elif provider == "ollama":
-        async for token in _stream_ollama(messages, temperature, max_tokens):
+        # Strip provider prefix from model name
+        ollama_model = model.split("/", 1)[-1] if "/" in model else model
+        async for token in _stream_ollama(messages, temperature, max_tokens, ollama_model):
             yield token
     else:  # openai-compat
         async for token in _stream_openai(messages, temperature, max_tokens, model):
