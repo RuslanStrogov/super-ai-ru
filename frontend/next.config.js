@@ -1,6 +1,5 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  output: 'standalone',
   staticPageGenerationTimeout: 300,
   async rewrites() {
     return [
