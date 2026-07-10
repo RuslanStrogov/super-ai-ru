@@ -194,6 +194,30 @@ async def chat_completions(
     )
 
 
+@router.post(
+    "/conversations",
+    status_code=201,
+    summary="Создать беседу",
+    description="Создать новую беседу (conversation) для чата с LLM.",
+)
+async def create_conversation(
+    body: dict,
+    current_user: User = Depends(get_current_user),
+    db: AsyncSession = Depends(get_db),
+) -> dict:
+    """Создать новую беседу и вернуть её ID."""
+    conv = Conversation(
+        user_id=current_user.id,
+        project_id=body.get("project_id"),
+        model=body.get("model") or "yandexgpt/pro",
+        title=body.get("title") or "Новый чат",
+    )
+    db.add(conv)
+    await db.commit()
+    await db.refresh(conv)
+    return {"id": conv.id, "title": conv.title, "created_at": conv.created_at.isoformat()}
+
+
 @router.get(
     "/conversations",
     response_model=ConversationListResponse,
