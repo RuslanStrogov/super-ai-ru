@@ -121,15 +121,17 @@ async def _stream_ollama(
     messages: list[ChatMessage],
     temperature: float | None,
     max_tokens: int | None,
+    model: str | None = None,
 ) -> AsyncGenerator[str, None]:
     """
     Стриминг через локальный Ollama.
 
     Документация: https://github.com/ollama/ollama/blob/main/docs/api.md
     """
+    actual_model = model or settings.OLLAMA_MODEL or "phi4-mini"
     url = f"{settings.OLLAMA_BASE_URL}/api/chat"
     body = {
-        "model": settings.OLLAMA_MODEL,
+        "model": actual_model,
         "messages": messages,
         "stream": True,
         "options": {
@@ -189,6 +191,14 @@ PROVIDER_MAP: dict[str, str] = {
     "gigachat": "gigachat",
     "giga": "gigachat",
     "ollama": "ollama",
+    "phi": "ollama",
+    "qwen": "ollama",
+    "llama": "ollama",
+    "mistral": "ollama",
+    "stablelm": "ollama",
+    "tinyllama": "ollama",
+    "minimax": "ollama",
+    "deepseek": "openai",
 }
 
 
